@@ -71,9 +71,11 @@ def edit_provider(request, provider_id):
     
     
 @login_required
-def delete_provider(request, provider_id):
+def delete_provider(provider_id):
     details = MentalHealthProvider.objects.filter(id=provider_id).first()
     if details:
         details.delete()
     return HttpResponseRedirect('/providers')
+
+
 
