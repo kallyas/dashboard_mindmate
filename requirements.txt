@@ -1,9 +1,11 @@
+africastalking
 asgiref
 Django
 gunicorn
 mysqlclient
 Pillow
 psycopg2
+python-dotenv
 PyMySQL
 sqlparse
 tzdata
